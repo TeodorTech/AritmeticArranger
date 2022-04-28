@@ -1,5 +1,3 @@
-from tabulate import tabulate
-sums = ["32 - 698", "1 - 3801", "45 + 43", "123 + 49"]
 
 def arithmetic_arranger(sums):
    line1 = []
@@ -36,7 +34,7 @@ def arithmetic_arranger(sums):
    print()
 
 # verification of the problems
-def verification():
+def verification(sums):
     if len(sums) < 5:
      for g in sums:
       if g.split()[1] == ("+"):
@@ -84,9 +82,9 @@ def verification():
          print("Error: Too many problems.")
     if x == 1:
 
-       arithmetic_arranger(sums)
+       arithmetic_arranger(["32 - 698", "1 - 3801", "45 + 43", "123 + 49"])
 
-verification()
+verification(["32 - 698", "1 - 3801", "45 + 43", "123 + 49"])
 
 
 
